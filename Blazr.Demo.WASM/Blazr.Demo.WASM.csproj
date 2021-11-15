@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -12,7 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Blazr.Demo\Blazr.Demo.csproj" />
+    <ProjectReference Include="..\Blazr.Demo.Core\Blazr.Demo.Core.csproj" />
+    <ProjectReference Include="..\Blazr.Demo.Data\Blazr.Demo.Data.csproj" />
+    <ProjectReference Include="..\Blazr.Demo.UI\Blazr.Demo.UI.csproj" />
+    <ProjectReference Include="..\Blazr.Demo.Config\Blazr.Demo.Config.csproj" />
   </ItemGroup>
 
 </Project>
