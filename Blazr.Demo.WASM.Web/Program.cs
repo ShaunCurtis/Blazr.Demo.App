@@ -1,14 +1,15 @@
 using Blazr.Demo.Config;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 var services = builder.Services;
 services.AddAppWASMServerServices();
+services.AddControllers().PartManager.ApplicationParts.Add(new AssemblyPart(typeof(Blazr.Demo.Controllers.WeatherForecastController).Assembly));
 
 
 var app = builder.Build();

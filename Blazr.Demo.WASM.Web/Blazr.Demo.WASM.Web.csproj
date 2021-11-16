@@ -12,6 +12,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Blazr.Demo.Config\Blazr.Demo.Config.csproj" />
+		<ProjectReference Include="..\Blazr.Demo.Controllers\Blazr.Demo.Controllers.csproj" />
 		<ProjectReference Include="..\Blazr.Demo.UI\Blazr.Demo.UI.csproj" />
 		<ProjectReference Include="..\Blazr.Demo.WASM\Blazr.Demo.WASM.csproj" />
 	</ItemGroup>
