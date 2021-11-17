@@ -78,7 +78,5 @@ namespace Blazr.Demo.Data
                 Summary = Summaries[rng.Next(Summaries.Length)]
             }).ToList();
         }
-
-
     }
 }
