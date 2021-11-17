@@ -15,7 +15,7 @@ namespace Blazr.Demo.Core
         public WeatherForecastViewService(IWeatherForecastDataBroker weatherForecastDataBroker)
             => this.weatherForecastDataBroker = weatherForecastDataBroker!;
 
-        public async Task GetForecastsAsync()
+        public async ValueTask GetForecastsAsync()
         {
             this.Records = null;
             this.NotifyListChanged(this.Records, EventArgs.Empty);
@@ -23,13 +23,13 @@ namespace Blazr.Demo.Core
             this.NotifyListChanged(this.Records, EventArgs.Empty);
         }
 
-        public async Task AddRecord(WeatherForecast record)
+        public async ValueTask AddRecord(WeatherForecast record)
         {
             await weatherForecastDataBroker!.AddForecastAsync(record);
             await GetForecastsAsync();
         }
 
-        public async Task DeleteRecord(Guid Id)
+        public async ValueTask DeleteRecord(Guid Id)
         {
             _ = await weatherForecastDataBroker!.DeleteForecastAsync(Id);
             await GetForecastsAsync();
