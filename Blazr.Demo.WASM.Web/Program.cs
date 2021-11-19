@@ -1,4 +1,5 @@
-using Blazr.Demo.Config;
+using Blazr.Demo.Config.Config.Extensions;
+using Blazr.Demo.Controllers.Controllers;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,7 +10,7 @@ builder.Services.AddRazorPages();
 
 var services = builder.Services;
 services.AddAppWASMServerServices();
-services.AddControllers().PartManager.ApplicationParts.Add(new AssemblyPart(typeof(Blazr.Demo.Controllers.WeatherForecastController).Assembly));
+services.AddControllers().PartManager.ApplicationParts.Add(new AssemblyPart(typeof(WeatherForecastController).Assembly));
 
 
 var app = builder.Build();

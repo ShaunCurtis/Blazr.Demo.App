@@ -4,9 +4,11 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
+using Blazr.Demo.Core.DataClasses;
+using Blazr.Demo.Core.Interfaces;
+using Blazr.Demo.Data.DataStores;
 
-namespace Blazr.Demo.Data
+namespace Blazr.Demo.Data.DataBrokers
 {
     /// <summary>
     /// This is the server version of the data broker.
@@ -20,13 +22,13 @@ namespace Blazr.Demo.Data
             => this.weatherForecastDataStore = weatherForecastDataStore;
 
         public async ValueTask<bool> AddForecastAsync(WeatherForecast record)
-            => await this.weatherForecastDataStore!.AddForecastAsync(record);
+            => await weatherForecastDataStore!.AddForecastAsync(record);
 
         public async ValueTask<bool> DeleteForecastAsync(Guid Id)
-            => await this.weatherForecastDataStore!.DeleteForecastAsync(Id);
+            => await weatherForecastDataStore!.DeleteForecastAsync(Id);
 
         public async ValueTask<List<WeatherForecast>> GetWeatherForecastsAsync()
-            => await this.weatherForecastDataStore!.GetWeatherForecastsAsync();
+            => await weatherForecastDataStore!.GetWeatherForecastsAsync();
 
     }
 }

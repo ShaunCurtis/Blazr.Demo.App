@@ -4,8 +4,10 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
-using Blazr.Demo.Data;
+using Blazr.Demo.Core.Interfaces;
+using Blazr.Demo.Core.ViewServices;
+using Blazr.Demo.Data.DataBrokers;
+using Blazr.Demo.Data.DataStores;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Blazr.Demo.Config

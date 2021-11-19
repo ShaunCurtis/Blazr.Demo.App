@@ -5,9 +5,10 @@
 /// ============================================================
 
 using Blazr.Demo.Data;
+using Blazr.Demo.Data.DataStores;
 using Xunit;
 
-namespace Blazr.Template.Tests.DataBrokers
+namespace Blazr.Demo.Tests.DataBrokers
 {
     public partial class WeatherForecastDataBrokerTests
     {

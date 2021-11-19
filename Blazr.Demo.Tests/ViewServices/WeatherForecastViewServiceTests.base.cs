@@ -4,8 +4,8 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
-using Blazr.Demo.Data;
+using Blazr.Demo.Core.DataClasses;
+using Blazr.Demo.Data.DataStores;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

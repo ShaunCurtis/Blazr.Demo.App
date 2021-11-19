@@ -4,10 +4,11 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
+using Blazr.Demo.Core.DataClasses;
+using Blazr.Demo.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Blazr.Demo.Controllers
+namespace Blazr.Demo.Controllers.Controllers
 {
     [ApiController]
     [Route("[controller]")]

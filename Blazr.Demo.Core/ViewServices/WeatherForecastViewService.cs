@@ -1,10 +1,11 @@
-﻿/// ============================================================
+﻿using Blazr.Demo.Core.DataClasses;
+using Blazr.Demo.Core.Interfaces;
+/// ============================================================
 /// Author: Shaun Curtis, Cold Elm Coders
 /// License: Use And Donate
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
-
-namespace Blazr.Demo.Core
+namespace Blazr.Demo.Core.ViewServices
 {
     public class WeatherForecastViewService
     {
@@ -17,10 +18,10 @@ namespace Blazr.Demo.Core
 
         public async ValueTask GetForecastsAsync()
         {
-            this.Records = null;
-            this.NotifyListChanged(this.Records, EventArgs.Empty);
-            this.Records = await weatherForecastDataBroker!.GetWeatherForecastsAsync();
-            this.NotifyListChanged(this.Records, EventArgs.Empty);
+            Records = null;
+            NotifyListChanged(Records, EventArgs.Empty);
+            Records = await weatherForecastDataBroker!.GetWeatherForecastsAsync();
+            NotifyListChanged(Records, EventArgs.Empty);
         }
 
         public async ValueTask AddRecord(WeatherForecast record)

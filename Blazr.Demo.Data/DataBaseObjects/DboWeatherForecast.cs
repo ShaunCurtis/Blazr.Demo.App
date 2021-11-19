@@ -1,11 +1,10 @@
-﻿
-using Blazr.Demo.Core;
+﻿using Blazr.Demo.Core.DataClasses;
 /// ============================================================
 /// Author: Shaun Curtis, Cold Elm Coders
 /// License: Use And Donate
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
-namespace Blazr.Demo.Data
+namespace Blazr.Demo.Data.DataBaseObjects
 {
     internal record DboWeatherForecast
     {
@@ -20,14 +19,15 @@ namespace Blazr.Demo.Data
         public WeatherForecast ToDto()
             => new WeatherForecast
             {
-                Id = this.Id,
-                Date = this.Date,
-                TemperatureC = this.TemperatureC,
-                Summary = this.Summary
+                Id = Id,
+                Date = Date,
+                TemperatureC = TemperatureC,
+                Summary = Summary
             };
 
         public static DboWeatherForecast FromDto(WeatherForecast record)
-            => new DboWeatherForecast { 
+            => new DboWeatherForecast
+            {
                 Id = record.Id,
                 Date = record.Date,
                 TemperatureC = record.TemperatureC,

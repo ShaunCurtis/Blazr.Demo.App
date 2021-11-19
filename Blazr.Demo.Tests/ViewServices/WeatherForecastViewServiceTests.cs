@@ -4,7 +4,9 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
+using Blazr.Demo.Core.DataClasses;
+using Blazr.Demo.Core.Interfaces;
+using Blazr.Demo.Core.ViewServices;
 using Moq;
 using System;
 using System.Collections.Generic;
