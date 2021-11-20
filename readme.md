@@ -7,6 +7,10 @@ This template combines the out-of-the-box Blazor Server and Web Assembly templat
 3. Demonstrate component rendering techniques.
 4. Demonstrate the Service Notification pattern.
 
+## Visual Studio Template
+
+This solutiuon is available as a Visual Studio Template on GitHub at at [Blazr.Demo.Template](https://github.com/ShaunCurtis/Blazr.Demo.Template).
+
 ## Sound Design
 
 The basic architecture of the solution splits the application codebase into three domains:

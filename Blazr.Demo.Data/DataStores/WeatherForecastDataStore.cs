@@ -61,7 +61,7 @@ namespace Blazr.Demo.Data
             return ValueTask.FromResult(list);
         }
 
-        public void OverrideWeatherForecastDateSet(List<WeatherForecast> list)
+        public void OverrideWeatherForecastDataSet(List<WeatherForecast> list)
         {
             _records.Clear();
             list.ForEach(item => _records.Add(DboWeatherForecast.FromDto(item)));

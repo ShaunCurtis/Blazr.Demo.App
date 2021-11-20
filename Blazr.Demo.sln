@@ -13,6 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazr.Demo.WASM.Web", "Blaz
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F2F98A49-2D42-4A49-ACDE-C102A1A93F41}"
 	ProjectSection(SolutionItems) = preProject
+		article.md = article.md
 		readme.md = readme.md
 	EndProjectSection
 EndProject
@@ -24,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazr.Demo.UI", "Blazr.Demo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazr.Demo.Controllers", "Blazr.Demo.Controllers\Blazr.Demo.Controllers.csproj", "{660ACC5F-9297-47F2-BDC7-E8C09B64D985}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazr.Demo.Tests", "Blazr.Demo.Tests\Blazr.Demo.Tests.csproj", "{55D43DA1-64A8-41A4-9E7F-567445CCEB8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazr.Demo.Tests", "Blazr.Demo.Tests\Blazr.Demo.Tests.csproj", "{55D43DA1-64A8-41A4-9E7F-567445CCEB8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

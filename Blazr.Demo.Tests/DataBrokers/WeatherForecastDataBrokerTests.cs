@@ -21,7 +21,7 @@ namespace Blazr.Template.Tests.DataBrokers
             // define
             var weatherForecastDataStore = new WeatherForecastDataStore();
             var records = WeatherForecastDataStore.CreateTestForecasts(noOfRecords);
-            weatherForecastDataStore.OverrideWeatherForecastDateSet(records);
+            weatherForecastDataStore.OverrideWeatherForecastDataSet(records);
             var dataBroker = new WeatherForecastServerDataBroker(weatherForecastDataStore: weatherForecastDataStore);
 
             // test
