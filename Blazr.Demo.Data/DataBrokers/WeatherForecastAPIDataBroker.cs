@@ -4,8 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
-using System.Net.Http.Json;
 
 namespace Blazr.Demo.Data
 {
@@ -36,7 +34,7 @@ namespace Blazr.Demo.Data
 
         public async ValueTask<List<WeatherForecast>> GetWeatherForecastsAsync()
         {
-           var list = await this.httpClient!.GetFromJsonAsync<List<WeatherForecast>>($"/api/weatherforecast/list");
+            var list = await this.httpClient!.GetFromJsonAsync<List<WeatherForecast>>($"/api/weatherforecast/list");
             return list!;
         }
     }

@@ -4,9 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.UI;
-using Bunit;
-using Xunit;
 
 namespace Blazr.Demo.Tests.Components
 {
@@ -24,7 +21,7 @@ namespace Blazr.Demo.Tests.Components
 
             // Test
             var button = component.Find("button");
-            for(int i = 1; i <= noOfClicks; i++)
+            for (int i = 1; i <= noOfClicks; i++)
             {
                 button.Click();
             }

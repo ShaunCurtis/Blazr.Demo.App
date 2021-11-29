@@ -4,7 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
 
 namespace Blazr.Demo.Data
 {
@@ -36,7 +35,7 @@ namespace Blazr.Demo.Data
 
         public ValueTask<bool> AddForecastAsync(WeatherForecast weatherForecast)
         {
-            var record = DboWeatherForecast.FromDto(weatherForecast); 
+            var record = DboWeatherForecast.FromDto(weatherForecast);
             _records.Add(record);
             return ValueTask.FromResult(true);
         }

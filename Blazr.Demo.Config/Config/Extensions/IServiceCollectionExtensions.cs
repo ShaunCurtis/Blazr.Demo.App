@@ -4,10 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
-using Blazr.Demo.Data;
-using Microsoft.Extensions.DependencyInjection;
-
 namespace Blazr.Demo.Config
 {
     public static class IServiceCollectionExtensions

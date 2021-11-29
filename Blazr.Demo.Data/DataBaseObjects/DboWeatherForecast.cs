@@ -1,10 +1,10 @@
-﻿
-using Blazr.Demo.Core;
-/// ============================================================
+﻿/// ============================================================
 /// Author: Shaun Curtis, Cold Elm Coders
 /// License: Use And Donate
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
+
+
 namespace Blazr.Demo.Data
 {
     internal record DboWeatherForecast
@@ -27,7 +27,8 @@ namespace Blazr.Demo.Data
             };
 
         public static DboWeatherForecast FromDto(WeatherForecast record)
-            => new DboWeatherForecast { 
+            => new DboWeatherForecast
+            {
                 Id = record.Id,
                 Date = record.Date,
                 TemperatureC = record.TemperatureC,

@@ -1,5 +1,5 @@
-using Blazr.Demo.Config;
-using Microsoft.AspNetCore.Mvc.ApplicationParts;
+global using Blazr.Demo.Config;
+global using Microsoft.AspNetCore.Mvc.ApplicationParts;
 
 var builder = WebApplication.CreateBuilder(args);
 

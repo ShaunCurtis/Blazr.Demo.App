@@ -4,8 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Data;
-using Xunit;
 
 namespace Blazr.Template.Tests.DataBrokers
 {

@@ -4,8 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using Blazr.Demo.Core;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Blazr.Demo.Controllers
 {

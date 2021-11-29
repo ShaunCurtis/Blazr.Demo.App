@@ -16,6 +16,5 @@ namespace Blazr.Demo.Core
         public ValueTask<bool> DeleteForecastAsync(Guid Id);
 
         public ValueTask<List<WeatherForecast>> GetWeatherForecastsAsync();
-
     }
 }
