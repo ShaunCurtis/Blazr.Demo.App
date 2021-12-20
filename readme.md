@@ -2,14 +2,14 @@
 
 This template combines the out-of-the-box Blazor Server and Web Assembly templates into a single solution.  The projects are re-organised to:
 
-1. Apply Sound Design principles. 
-2. Re-organise the code base so the Blazor Server and WASM SPA's are two implementation of the same code base.
+1. Apply Clean Design principles. 
+2. Re-organise the code base so the Blazor Server and WASM SPA's are two implementations of the same code base.
 3. Demonstrate component rendering techniques.
 4. Demonstrate the Service Notification pattern.
 
 ## Visual Studio Template
 
-This solutiuon is available as a Visual Studio Template on GitHub at at [Blazr.Demo.Template](https://github.com/ShaunCurtis/Blazr.Demo.Template).
+This solution is available as a Visual Studio Template on GitHub at at [Blazr.Demo.Template](https://github.com/ShaunCurtis/Blazr.Demo.Template).
 
 ## Sound Design
 
